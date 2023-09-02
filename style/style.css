@@ -1,0 +1,114 @@
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Anton";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/anton-v25-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Anton", sans-serif;
+
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s;
+}
+.my-name {
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+}
+.container {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  position: absolute;
+}
+.dice-img {
+  position: fixed;
+  top: 170px;
+}
+.section {
+  background-color: rgb(71, 228, 149);
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-2 {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.section-1 {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.no-active {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+}
+.section-title {
+  margin-top: 50px;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.point {
+  font-size: 75px;
+  margin-bottom: 80px;
+}
+.current-wrapper {
+  background-color: aquamarine;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.current {
+  margin-top: 20px;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.current-point {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.btn {
+  position: relative;
+  width: 140px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+}
+.btn:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  color: bisque;
+}
+.btn-newGame {
+  align-items: center;
+  top: 65px;
+}
+.btn-rollDace {
+  top: 310px;
+}
+.btn-hold {
+  top: 330px;
+}
+.winner {
+  background: linear-gradient(rgba(14, 17, 175, 0.5), rgba(179, 221, 27, 0.7));
+}
